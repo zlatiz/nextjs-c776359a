@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #07080A;
+    --foreground: #E6EDF3;
+    --primary: #0B0F12;
+    --primary-foreground: #ffffff;
+    --secondary: #00BFA6;
+    --muted: #111217;
+    --muted-foreground: #A3A9B1;
+    --accent: #FF4DA6;
+    --border: #22252A;
+    --radius: 12px;
+  }
+
+  html, body, #__next {
+    height: 100%;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui;
+    color: var(--foreground);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.04);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius);
+  }
+}
